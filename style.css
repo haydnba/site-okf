@@ -1,0 +1,159 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    /* overflow: hidden; */
+}
+
+.container {
+    background: #80A7C9;
+}
+
+#banner {
+    background: #80A7C9;
+    width: 100%;
+}
+
+#banner h1 {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 2.3em;
+    font-weight: 700;
+    letter-spacing: 0.0em;
+    padding-top: 1em;
+    padding-left: 0.2em;
+    position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+    right: 0;
+    z-index: 20;
+}
+
+#banner a {
+    color: #6F473B;
+    border-bottom: 10px solid #D3A8B0;
+}
+
+#banner span {
+    display: block;
+    border-bottom: 3px solid blue;
+}
+
+#info-wrapper {
+    background: #D3A8B0;
+    width: 33.33vw;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+}
+
+#info h2 {
+    font-size: 2.0em;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    padding-top: 25vh;
+    padding-left: 10vw;
+}
+
+#info a {
+    /* color: #DCDCDC; */
+    color: #3A3A3B;
+    border-bottom: 7px solid green;
+}
+
+#contact-wrapper {
+    /* background: #efc69b; */
+    width: 100vw;
+    position: absolute;
+    float: left;
+    z-index: 5;
+}
+
+#contact-wrapper:before {
+    content: '';
+    display: block;
+    padding-top: 66.66%;
+}
+
+#contact {
+    background: #D3A8B0;
+    border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+    right: 33.33%;
+}
+
+#contact h2 {
+    font-size: 2.0em;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin: 33.33% 25%
+}
+
+#contact a {
+    color: #3A3A3B;
+    border-bottom: 7px solid red;
+}
+
+
+@media screen and (orientation: portrait) {
+    .container {
+        height: 100vh;
+    }
+    
+    #banner {
+        height: 45vh;
+    }
+
+    #info-wrapper {
+        height: 100vh;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .container {
+        height: 100vh;
+    }
+    
+    #banner {
+        height: 25vh;
+    }
+
+    #banner span {
+        display: inline;
+    }
+    
+
+    #info-wrapper {
+        height: 100vh;
+    }
+
+    #contact-wrapper:before {
+        padding-top: 33.33%;
+    }
+    
+    #contact {
+        left: 33.33%;
+        right: 33.33%;
+    }
+    
+}
+

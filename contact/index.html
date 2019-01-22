@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+
+  <div id="banner">
+    <h1>
+      <a href="/">
+        <span>Olivia</span> <span>Fairweather</span>
+      </a>
+    </h1>
+  </div>
+
+  <div id="email-wrapper">
+    <div id="email">
+      <h2>
+        <a href="mailto:someone@email.com?subject=test">
+          <span>email</span>
+        </a>
+      </h2>
+    </div>
+  </div>  
+
+  <div id="message-wrapper">
+    <div id="message">
+      <h2>
+        <span>message</span>
+      </h2>
+      <form name="contact-form" method="POST" data-netlify="true">
+        <p>
+          <label>Name:<br><input type="text" name="name"></label>
+        </p>
+        <p>
+          <label>Email:<br><input type="email" name="_replyto"></label>
+        </p>
+        <p>
+          <label>Message:<br><textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <input type="submit" value="Send">
+        </p>
+      </form> 
+    </div>
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
