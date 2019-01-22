@@ -1,6 +1,4 @@
-@import url('https://rsms.me/inter/inter-ui.css');
-@import url('https://fonts.googleapis.com/css?family=Sarabun');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif');
 
 * {
     margin: 0px;
@@ -39,7 +37,7 @@ body {
     position: absolute;
 	top: 0;
 	left: 0;
-	bottom: 0;
+	bottom: auto;
     right: 0;
     z-index: 20;
 }
@@ -67,7 +65,7 @@ body {
     font-size: 2.0em;
     font-weight: 700;
     letter-spacing: 0.03em;
-    padding-top: 25vh;
+    padding-top: 30vh;
     padding-left: 10vw;
 }
 
