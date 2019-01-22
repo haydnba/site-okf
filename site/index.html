@@ -33,7 +33,7 @@
     <div id="contact">
       <h2>
         <span id="contact-link">contact</span>
-      </h2>            
+      </h2>
     </div>
   </div>
 
@@ -41,16 +41,21 @@
 
 <script>
 
-  document.getElementById('contact-link').addEventListener('click', function() {
-    let req = new XMLHttpRequest();
+  window.onload = function() {
+    var req = new XMLHttpRequest();
     req.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        window.location.href = 'mailto:' + req.responseText + '?subject=test';
+        document
+          .getElementById('contact-link')
+          .addEventListener('click', function() {
+            window.location.href = req.responseText;
+          });
       }
     };
     req.open('GET', '/.netlify/functions/mailto');
     req.send();
-  })
+  }
+  
 
 </script>
 
