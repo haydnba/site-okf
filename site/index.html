@@ -48,12 +48,13 @@
     let req = new XMLHttpRequest();
     req.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        let addr = xhttp.responseText;
-        window.location.href = 'mailto:' + addr + '?subject=test';
-    }
+        window.location.href = 'mailto:' + req.responseText + '?subject=test';
+      }
     };
     req.open('GET', '/.netlify/functions/mailto');
     req.send();
+    // let addr = 'haydnba@gmail.com'
+    // window.location.href = 'mailto:' + addr;
   })
 
 </script>
