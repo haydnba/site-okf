@@ -106,9 +106,13 @@ body {
     margin: 33.33% 25%
 }
 
-#contact a {
+#contact span {
     color: #3A3A3B;
     border-bottom: 7px solid red;
+}
+
+#contact span:hover {
+    cursor: pointer;
 }
 
 
