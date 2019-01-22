@@ -32,9 +32,7 @@
   <div id="contact-wrapper">
     <div id="contact">
       <h2>
-        <a href="/" id="contact-link">
-          <span>contact</span>
-        </a>
+        <span id="contact-link">contact</span>
       </h2>            
     </div>
   </div>
@@ -43,8 +41,7 @@
 
 <script>
 
-  document.getElementById('contact-link').addEventListener('click', function(e) {
-    e.preventDefault();
+  document.getElementById('contact-link').addEventListener('click', function() {
     let req = new XMLHttpRequest();
     req.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -53,8 +50,6 @@
     };
     req.open('GET', '/.netlify/functions/mailto');
     req.send();
-    // let addr = 'haydnba@gmail.com'
-    // window.location.href = 'mailto:' + addr;
   })
 
 </script>
